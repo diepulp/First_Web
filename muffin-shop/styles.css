@@ -1,0 +1,343 @@
+
+
+
+
+
+
+
+/* General styles
+----------------------------------------------------------*/
+
+body{
+    background-color: #ff785a;
+    border: 5px solid black;
+
+    margin-left:auto;
+    margin-right:auto;
+    font-family: "Roboto", sans-serif;
+    font-size:1rem;
+    width: 100vw;
+  }
+
+  h1 {
+    color:white;
+    font-size: 40px;
+    padding-top:200px;
+    vertical-align: center;
+
+  }
+
+ h1, h2, h3, h4{
+    text-align: center;
+    letter-spacing: 0.2em;
+    padding:10px;
+  }
+
+ header{
+   min-height:20%;
+   text-align:center;
+   grid-area:header;
+  }
+
+h2{
+  padding:10px;
+  font-size: 2rem;
+  color:white;
+}
+ p{
+   font-size: 1rem;
+   color: white;
+   font-family: "Roboto", sans-serif;
+
+}
+
+
+
+
+
+/* Containers
+---------------------------------------------------------- */
+
+
+/* Header
+-------------------------------*/
+.first {
+  background: linear-gradient(
+  rgba(0,0,0,0.6),
+  rgba(0,0,0,0.6)),
+   url(images/tray.jpg);
+  background-position:center;
+  background-repeat: no-repeat;
+  height:450px;
+  background-size: cover;
+  opacity:1;
+  width:100%;
+  padding-top:200px;;
+  position: relative;
+  grid-area: header;
+
+}
+
+/* LEFT */
+.leftcontainer{
+   background: linear-gradient(
+  rgba(0,0,0,0.6),
+  rgba(0,0,0,0.6)),
+   url(images/muffin3.jpg);
+  background-position:center;
+  background-repeat: no-repeat;
+  height:450px;
+  background-size: cover;
+  opacity:1;
+  width:100%;
+  position: relative;
+  color:white;
+  padding:20px;
+  font-size:12px;
+  text-indent: 1em;
+  grid-area:left;
+}
+
+.leftcontainer > h2{
+  padding-top:10px;
+}
+
+
+/* RIGHT
+------------------------------------- */
+.reviews{
+    background: linear-gradient(
+  rgba(0,0,0,0.6),
+  rgba(0,0,0,0.6)),
+   url(images/open.jpg);
+  background-position:center;
+  background-repeat: no-repeat;
+  height:450px;
+  background-size: cover;
+  opacity:1;
+  width:100%;
+  position: relative;
+  font-size:12px;
+  padding: 20px;
+  grid-area:reviews;
+}
+.reviews p{
+  padding:10px;
+}
+
+
+
+
+/* MIDDLE
+----------------------------- */
+.middlecontainer{
+
+  background: linear-gradient(
+  rgba(0,0,0,0.6),
+  rgba(0,0,0,0.6)),
+   url(images/muffin4.jpg);
+   text-indent: 1em;
+   padding: 20px;
+   background-size: cover;
+   background-repeat:no-repeat;
+   background-position:center;
+   height:450px;
+   color: white;
+   opacity:1;
+   width:100%;
+   position:relative;
+   grid-area: mid;
+   align-content: center;
+
+
+}
+
+/* RUNNER
+------------------------------------------------------------------*/
+
+  .runner {
+    background-image:linear-gradient(#e9806e, #78bc61, #C59B76);
+    color:white;
+    position:relative;
+    background-repeat: no-repeat;
+    font-family:"Roboto", sans-serif;
+    font-size:12px;
+    grid-area:runner;
+  }
+  .runner{
+  background: linear-gradient(
+  rgba(0,0,0,0.6),
+  rgba(0,0,0,0.6)),
+   url(images/runner.jpg);
+  background-position:center;
+  background-repeat: no-repeat;
+  height:450px;
+  background-size: cover;
+  opacity:1;
+  width:100%;
+  position: relative;
+  font-size:12px;
+  padding: 20px;
+
+}
+
+
+.runner img{
+  position:relative;
+  padding: 30px;
+  border-radius:50%;
+}
+.runner h3{
+  font-size: 16px;
+  padding-top:40px;
+}
+.runner p{
+  text-align: center;
+
+}
+
+/* Recipie
+--------------------------------*/
+.recipie{
+  background: linear-gradient(
+  rgba(0,0,0,0.6),
+  rgba(0,0,0,0.6)),
+   url(images/recipie.jpg);
+  background-position:center;
+  background-repeat: no-repeat;
+  min-height:450px;
+  background-size: cover;
+  opacity:1;
+  width:100%;
+  position: relative;
+  font-size:12px;
+  padding: 20px;
+  color:white;
+  grid-area:recipie;
+
+
+}
+#instructions {
+  margin-top:10px;
+  font-size:1rem;
+  position:relative;
+  float: right;
+  text-align:center;
+}
+
+
+
+
+
+
+
+/* Footer */
+
+#footer .box, .box1{
+  padding:2em;
+  color:white;
+}
+#footer .box:first-of-type{
+  background-color: #6c5a49;
+
+}
+#footer .box:last-of-type{
+  background-color: #131200;
+
+}
+footer{
+
+  width:100%;
+
+  font-family:"Roboto", sans-serif;
+  border-radius:10px;
+  grid-area: footer;
+}
+
+.box{
+  width:100%;
+  flex:1;
+  font-family:"Roboto", sans-serif;
+  text-align:center;
+}
+.box1{
+
+  width:100%;
+  font-family:"Roboto", sans-serif;
+  background-color: black;
+  text-align:center;
+}
+
+/* MEdia querie
+----------------------------------------------*/
+@media screen and (min-width:768px) {
+  body{
+    display:grid;
+    grid-template-areas:
+    "header header header"
+    "left mid reviews"
+    "runner runner runner"
+    "recipie recipie recipie"
+    "footer footer footer";
+    grid-gap:10px;
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
